@@ -36,4 +36,4 @@ def handle_result(args, data, target_window_id, boss, extra_cli_args, *a):
         # boss.launch("/Users/dugan/.local/bin/git_show_diff")
 
         # Okay launching without a path works...
-        boss.launch("--cwd=current", "git_show_diff")
+        boss.launch("--cwd=current", "git_show_diff", f"{word}")
