@@ -30,4 +30,10 @@ def handle_result(args, data, target_window_id, boss, extra_cli_args, *a):
     for word, match_data in zip(matches, groupdicts):
         # Lookup the word in a dictionary, the open_url function
         # will open the provided url in the system browser
-        boss.open_url(f"https://www.google.com/search?q=define:{word}")
+        # boss.open_url(f"https://www.google.com/search?q=define:{word}")
+
+        # This actually launches.
+        # boss.launch("/Users/dugan/.local/bin/git_show_diff")
+
+        # Okay launching without a path works...
+        boss.launch("git_show_diff")
