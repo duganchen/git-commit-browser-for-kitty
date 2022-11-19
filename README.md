@@ -1,9 +1,9 @@
 # Git commit browser for Kitty
 
+![demo](usage.gif)
+
 This is a system for using [kitty](https://sw.kovidgoyal.net/kitty/) to browse
 git commits, gitk style.
-
-As of now, it's at the "works on my computer" (OS X, with [Delta](https://github.com/dandavison/delta) handling git diffs) stage.
 
 Put git-hash-hints.py in ~/.config/kitty
 
@@ -15,14 +15,16 @@ Put the following in kitty.conf:
 
 Display the git log in the terminal:
 
-![log](images/log.png)
+![log](screenshots/log.png)
 
 Press Ctrl+Shift+b and then g. You'll see a number after each commit on the screen:
 
-![hints](images/hints.png)
+![hints](screenshots/hints.png)
 
 Enter one of the numbers to see that commit:
 
-![hints](images/preview.png)
+![hints](screenshots/preview.png)
 
 Press "q" to close the preview window.
+
+As of now, it's at the "works on my computer" (OS X, with [Delta](https://github.com/dandavison/delta)) as the git pager) stage.
