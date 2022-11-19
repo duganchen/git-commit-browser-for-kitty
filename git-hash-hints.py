@@ -1,14 +1,16 @@
 import re
 
-# 84997af
-
 
 def mark(text, args, Mark, extra_cli_args, *a):
     # This function is responsible for finding all
     # matching text. extra_cli_args are any extra arguments
     # passed on the command line when invoking the kitten.
     # We mark all individual word for potential selection
-    for idx, m in enumerate(re.finditer(r"\b[0-9a-f]{7}\b", text)):
+
+    # Git hashes are 6-8 or 40 characters, right?
+    for idx, m in enumerate(
+        re.finditer(r"\b([0-9a-f]{6}|[0-9a-f]{7}|[0-9a-f]{8}|[0-9a-f]{40})\b", text)
+    ):
         start, end = m.span()
         mark_text = text[start:end].replace("\n", "").replace("\0", "")
         # The empty dictionary below will be available as groupdicts
