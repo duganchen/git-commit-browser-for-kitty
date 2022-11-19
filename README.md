@@ -1,2 +1,3 @@
-# git-commit-browser-for-kitty
-Git commit browser for Kitty
+# Git commit browser for Kitty
+
+This is to be a Git commit browser for [kitty](https://sw.kovidgoyal.net/kitty/).
