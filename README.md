@@ -27,4 +27,4 @@ Enter one of the numbers to see that commit:
 
 Press "q" to close the preview window.
 
-As of now, it's at the "works on my computer" (OS X, with [Delta](https://github.com/dandavison/delta)) as the git pager) stage.
+As of now, it's at the "works on my computer" (OS X, with [Delta](https://github.com/dandavison/delta) as the git pager) stage.
