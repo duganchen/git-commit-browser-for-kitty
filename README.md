@@ -17,7 +17,7 @@ Display the git log in the terminal:
 
 ![log](screenshots/log.png)
 
-Press Ctrl+Shift+b and then g. You'll see a number after each commit on the screen:
+Press Ctrl+Shift+b and then g. You'll see a number next to each commit on the screen:
 
 ![hints](screenshots/hints.png)
 
